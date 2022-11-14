@@ -2,6 +2,7 @@
   outline: none;
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }
 
 header {
@@ -70,6 +71,8 @@ header {
   .form-wrapper {
     position: relative;
     margin: 25px 25px;
+    display: flex;
+    flex-wrap: wrap;
   }
 
   .form-shape {
@@ -84,9 +87,14 @@ header {
     transform: skewX(0);
     left: 36%;
     border: 2px solid #fff;
+    display: none;
   }
 
   .submit-btn {
-    left: 167px;
+    position: initial;
+    width: 170px;
+    height: 50px;
+    background-color: #fe0000;
+    border: 1px solid #fff;
   }
 }
