@@ -99,3 +99,39 @@ header {
     border: 1px solid #fff;
   }
 }
+
+.display {
+  display: none;
+}
+
+.popup-wrapper {
+  position: fixed;
+  top: 1%;
+  left: 50%;
+  margin-left: -200px;
+  z-index: 100;
+
+  .popup {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 400px;
+    height: 200px;
+    background-color: #f3f3f3;
+    border-radius: 5%;
+  }
+
+  #close {
+    align-self: end;
+    margin-top: 10px;
+    margin-right: 20px;
+    color: #fe0000;
+    font-size: 30px;
+    cursor: pointer;
+  }
+
+  .message {
+    align-self: center;
+    margin-bottom: 90px;
+  }
+}

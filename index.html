@@ -5,11 +5,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Mikita Usaty Test Task</title>
-    <link rel="stylesheet" href="style.css" />
   </head>
   <body>
     <header>
-      <form action="#" class="form">
+      <form id="form">
         <div class="form-wrapper">
           <div class="form-shape"></div>
           <input type="text" class="form-input" placeholder="Ваш номер..." pattern="[0-9]+" required />
@@ -18,5 +17,11 @@
         </div>
       </form>
     </header>
+    <div class="popup-wrapper display" id="popup">
+      <div class="popup">
+        <div id="close"><i class="fa-solid fa-circle-xmark"></i></div>
+        <div class="message"></div>
+      </div>
+    </div>
   </body>
 </html>
