@@ -9,7 +9,6 @@ const input = document.querySelector('.form-input') as HTMLInputElement
 const message = document.querySelector('.message')
 const showMes = document.getElementById('popup')
 const closeBtn = document.getElementById('close')
-const formShape = document.querySelector('.form-shape')
 const messageError = document.querySelector('.message-error')
 
 form?.addEventListener('submit', (e) => {
