@@ -9,7 +9,8 @@ const message = document.querySelector('.message')
 const showMes = document.getElementById('popup')
 const closeBtn = document.getElementById('close')
 
-form?.addEventListener('submit', () => {
+form?.addEventListener('submit', (e) => {
+  e.preventDefault()
   handleReq()
 })
 
@@ -18,6 +19,8 @@ async function getReq(): Promise<any> {
 
   if (response.status === 200) {
     let text = await response.text()
+    console.log(text)
+
     return text
   }
 }

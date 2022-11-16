@@ -47,10 +47,10 @@ header {
   position: absolute;
   width: 15%;
   height: 96%;
-  top: 0%;
-  left: 25%;
+  top: 1%;
+  left: 26%;
   background-color: #fe0000;
-  border: 1px solid #fff;
+  border: 2px solid #fff;
   transform: skewX(-45deg);
   cursor: pointer;
 }
@@ -66,38 +66,6 @@ header {
   color: #fcfbf3;
   cursor: pointer;
   background: transparent;
-}
-
-@media only screen and (max-width: 600px) {
-  .form-wrapper {
-    position: relative;
-    margin: 25px 25px;
-    display: flex;
-    flex-wrap: wrap;
-  }
-
-  .form-shape {
-    width: 200px;
-    transform: skewX(0);
-    border: 3px solid #fff;
-  }
-
-  .button-shape {
-    width: 200px;
-    height: 93%;
-    transform: skewX(0);
-    left: 36%;
-    border: 2px solid #fff;
-    display: none;
-  }
-
-  .submit-btn {
-    position: initial;
-    width: 170px;
-    height: 50px;
-    background-color: #fe0000;
-    border: 1px solid #fff;
-  }
 }
 
 .display {
@@ -133,5 +101,37 @@ header {
   .message {
     align-self: center;
     margin-bottom: 90px;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .form-wrapper {
+    position: relative;
+    margin: 25px 25px;
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .form-shape {
+    width: 150px;
+    transform: skewX(0);
+    border: 3px solid #fff;
+  }
+
+  .button-shape {
+    width: 140px;
+    height: 93%;
+    transform: skewX(0);
+    left: 36%;
+    border: 2px solid #fff;
+    display: none;
+  }
+
+  .submit-btn {
+    position: initial;
+    width: 140px;
+    height: 50px;
+    background-color: #fe0000;
+    border: 1px solid #fff;
   }
 }
