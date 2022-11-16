@@ -24,8 +24,8 @@ header {
 
 .form-shape {
   background-color: #d4d4d2;
-  width: 498px;
-  height: 50px;
+  width: 50%;
+  height: 60px;
   transform: skewX(-45deg);
   border: 1px solid #fff;
   opacity: 0.8;
@@ -45,10 +45,10 @@ header {
 
 .button-shape {
   position: absolute;
-  width: 15%;
+  width: 20%;
   height: 96%;
   top: 1%;
-  left: 26%;
+  left: 30%;
   background-color: #fe0000;
   border: 2px solid #fff;
   transform: skewX(-45deg);
@@ -61,8 +61,8 @@ header {
   height: 86%;
   border: none;
   top: 6%;
-  left: 320px;
-  font-size: x-large;
+  left: 33%;
+  font-size: larger;
   color: #fcfbf3;
   cursor: pointer;
   background: transparent;
@@ -94,7 +94,7 @@ header {
     align-self: end;
     margin-top: 10px;
     margin-right: 20px;
-    color: #fe0000;
+    color: #635f5f;
     font-size: 30px;
     cursor: pointer;
   }
@@ -131,7 +131,7 @@ header {
   .submit-btn {
     position: initial;
     width: 140px;
-    height: 50px;
+    height: 60px;
     background-color: #fe0000;
     border: 1px solid #fff;
   }

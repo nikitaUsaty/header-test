@@ -19,8 +19,6 @@ async function getReq(): Promise<any> {
 
   if (response.status === 200) {
     let text = await response.text()
-    console.log(text)
-
     return text
   }
 }
