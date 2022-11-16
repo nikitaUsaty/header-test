@@ -39,10 +39,8 @@ function validator() {
   let x = input.value
 
   if (!x) {
-    // formShape?.classList.add('error-input')
     messageError?.classList.remove('display')
   } else {
-    // formShape?.classList.remove('error-input')
     messageError?.classList.add('display')
     handleReq()
   }

@@ -60,7 +60,7 @@ module.exports = {
       title: 'race',
       template: path.resolve(__dirname, './index.html'),
       filename: 'index.html',
-      // favicon: path.resolve(__dirname, './assets/favicon.png'),
+      favicon: path.resolve(__dirname, './assets/favicon.png'),
     }),
     new CleanWebpackPlugin(),
     new MiniCssExtractPlugin(),
