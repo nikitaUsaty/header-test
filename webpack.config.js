@@ -68,7 +68,7 @@ module.exports = {
     new CopyWebpackPlugin({
       patterns: [
         {
-          from: path.resolve(__dirname, './assets/*.svg'),
+          from: path.resolve(__dirname, './assets/car.svg'),
           to: '[name][ext]',
         },
       ],
