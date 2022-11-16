@@ -5,13 +5,16 @@ import '@fortawesome/fontawesome-free/js/regular'
 import '@fortawesome/fontawesome-free/js/brands'
 
 const form = document.getElementById('form')
+const input = document.querySelector('.form-input') as HTMLInputElement
 const message = document.querySelector('.message')
 const showMes = document.getElementById('popup')
 const closeBtn = document.getElementById('close')
+const formShape = document.querySelector('.form-shape')
+const messageError = document.querySelector('.message-error')
 
 form?.addEventListener('submit', (e) => {
+  validator()
   e.preventDefault()
-  handleReq()
 })
 
 async function getReq(): Promise<any> {
@@ -31,3 +34,16 @@ async function handleReq() {
 closeBtn?.addEventListener('click', () => {
   showMes?.classList.add('display')
 })
+
+function validator() {
+  let x = input.value
+
+  if (!x) {
+    // formShape?.classList.add('error-input')
+    messageError?.classList.remove('display')
+  } else {
+    // formShape?.classList.remove('error-input')
+    messageError?.classList.add('display')
+    handleReq()
+  }
+}
